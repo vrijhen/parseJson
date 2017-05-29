@@ -1,0 +1,26 @@
+﻿Beste Hendrik Jan Visser/ software architect,
+
+Hierbij lever ik u zoals gevraagd de test voor:
+1) het uitlezen van de top 10 makelaars in Amsterdam met de meeste objecten te koop
+2) en de top 10 makelaars in Amsterdam met de meeste objecten te koop voorzien van een tuin.
+
+Rekende houden met dat dit slechts een test is en mijn werk helaas nooit helemaal 
+af zal zijn, en er altijd wel betere parsers, deserialisers en mechanismen te bedenken zijn, heb ik met een aantal puntjes rekening gehouden. Het aantal objecten waar doorheen geïtereerd moet worden is tegen de 3000, echter ik kan geen request doen van 3000 items. Sterker nog de maximale page size is 25. Dit betekent dan dat ik minimaal 3000/25 is circa 119 web requests moet afvuren. Indien ik dit synchroon afvuur dan merk ik dan kom ik uit op circa 15 seconden gemiddeld afhandelingstijd.
+
+Om de afhandelingssnelheid te vergroten heb ik de requests asynchroon afgevuurd en het aantal paginas apart opgevraagd. Dit leidde tot een afname van 50% met een gemiddelde van de 6/7 seconden.
+
+Het mechanisme om web request af te vuren heb ik ook vergeleken. De web cliënt is tot dusver de optie die ik heb verkozen en daarbij heb ik een http cliënt en enkele andere objecten vlug afgewogen hetgeen ook resulteerde in een klein verschil.
+
+Daarnaast zijn er verschillende bibliotheken en mechanismen om het resultaat te deserialiseren. Ik koos er hiervoor om mijn objecten te minimaliseren om zo ter voorbeeld een dynamic te ontwijken. Een deserialisatie naar een custom class leidde tot veel minder geheugen gebruik en zoek algoritmes loslaten op een kleiner object zal ook leiden tot performance winst. 
+
+Graag had ik de mogelijkheid gehad om in 1 request circa 3000 objecten in te lezen hetgeen ook resulteerde in een fractie van enkele seconden verwerkingstijd, minder CPU belasting en daarbij ook minder geheugen gebruik waarbij ik ook async methodes kan vermijden, echter daarbij maak ik ook de kanttekening dat ik niet meer dan 25 objecten per page request kan ophalen.
+
+Hopelijk is mijn werk aansluitend t.o.v. uw visie en ziet u aansluitingspunten om onderdeel te zijn van uw organisatie. Ik maak graag met u en uw organisatie kennis.
+
+Hoogachtend, 
+
+V. Rijhen
+
+
+
+
