@@ -1,6 +1,5 @@
 ﻿Beste Hendrik Jan Visser/ software architect,
 
-Hierbij lever ik u zoals gevraagd de test voor:
 1) het uitlezen van de top 10 makelaars in Amsterdam met de meeste objecten te koop
 2) en de top 10 makelaars in Amsterdam met de meeste objecten te koop voorzien van een tuin.
 
