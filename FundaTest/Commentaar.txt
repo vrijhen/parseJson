@@ -1,4 +1,4 @@
-﻿Beste Hendrik Jan Visser/ software architect,
+﻿Beste software architect,
 
 Hierbij lever ik u zoals gevraagd de tests voor:
 1) het uitlezen van de top 10 makelaars in Amsterdam met de meeste objecten te koop
